@@ -1,13 +1,11 @@
 import { reactive, watch } from "vue"
 
-
 export interface Item{
     id: number
     name: string
     description: string
     price: number
 }
-
 
 export interface ItemInBasket{
     id: number
@@ -54,3 +52,4 @@ export const baskets: ItemInBasket[] = reactive([])
 watch(baskets, (x) => {
   localStorage.setItem('baskets', JSON.stringify(x))
 })
+

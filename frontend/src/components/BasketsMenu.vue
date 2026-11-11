@@ -29,44 +29,6 @@ const basketInfo = computed(() => {
 });
 
 
-
-
-// if(price.value >= 5000)
-// { 
-//     bonus.value = 0.10; 
-//     finalPrice.value = price.value - price.value * bonus.value
-// }
-// else{
-//     bonus.value = 0
-//     finalPrice.value = price.value
-// }
-
-
-
-
-// function FindPriceAndCount(){
-
-//     let allcount = 0
-
-//     baskets.forEach( item => {
-//         price.value = price.value + (item.price * item.count)
-//         allcount = allcount + item.count 
-//     });
-
-
-
-
-
-//     if (price.value >= 5000){
-//         bonus.value = 0.1
-
-//     }
-//     else{
-//         bonus.value = 0
-//     }
-
-//     return
-// }
 </script>
 <template>
     <div class="">
