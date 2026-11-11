@@ -31,7 +31,7 @@ function OpenStore(){
   <div class="flex">
     <div class="">
       <h1>Продукты</h1>
-      <div v-for="product in products">
+      <div v-for="product in products" :key="product.id">
         <ProductCard :id="product.id" :name="product.name" :description="product.description" :price="product.price"/>
       </div>
     </div>

@@ -71,7 +71,7 @@ const basketInfo = computed(() => {
 <template>
     <div class="">
         <h2>Корзина</h2>
-        <div v-for="basket in baskets" class="">
+        <div v-for="basket in baskets" :key="basket.id" class="">
             <div class="">
             <p>Товар: {{ basket.name }}</p>
             <p>Цена: {{ basket.price }}</p>
