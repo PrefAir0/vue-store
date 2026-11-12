@@ -21,13 +21,12 @@ const basketInfo = computed(() => {
     }
 
     const countItems = baskets.reduce((sum, item) => { return sum + item.count}, 0);
-    const finalPrice = price + price * discount
+    const finalPrice = price - price * discount 
 
     emit('countItems', countItems)
 
     return {price , finalPrice, discount, countItems}
 });
-
 
 </script>
 <template>
